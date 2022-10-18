@@ -1,4 +1,5 @@
 /// <reference types="Cypress" />
+/// <reference types="cypress-xpath" />
 
 describe('Validates Webdriveruni homepage links', () => {
 
