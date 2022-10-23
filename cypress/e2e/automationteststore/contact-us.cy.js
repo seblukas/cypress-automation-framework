@@ -3,7 +3,12 @@
 
 describe('Test Contact Us on WebdriverUni', () => {
 
-    it('should be able to submit a successful submission via contact us form.', () => {
+    it('should be able to submit a successful submission via contact us form.', {
+        retries: {
+            openMode: 3,
+            runMode: 3,
+        }
+    }, () => {
         cy.visit('https://automationteststore.com/');
         // cy.xpath("//a[contains(@href,'contact')]").click();
         cy
@@ -12,7 +17,7 @@ describe('Test Contact Us on WebdriverUni', () => {
             .then(contactUsButton => {
                 cy.log(`Text on the button is "${contactUsButton.text()}"`)
             })
-        cy.get('#ContactUsFrm_first_name').type('Sebastian');
+        cy.get('#ContactUsFrm_first_name555').type('Sebastian');
         cy.get('#ContactUsFrm_email').type('sebastian.lukas@coldmail.com');
         cy.get('#ContactUsFrm_email').should('have.attr', 'name');
         cy.get('#ContactUsFrm_enquiry').type('This is a comment');

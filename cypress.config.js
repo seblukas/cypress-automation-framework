@@ -5,5 +5,11 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    retries: {
+      openMode: 0,
+    },
+    env: {
+      webdriveruniBaseURL: 'https://webdriveruniversity.com'
+    },
   },
 });

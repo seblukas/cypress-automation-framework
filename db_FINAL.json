@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Example Json Server",
+      "author": "Gianni B"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Hello world!",
+      "postId": 1
+    },
+    {
+      "query": "Some Query",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Example Json Server 222",
+      "author": "Sebi L"
+    }
+  ],
+  "profile": {
+    "name": "Gianni"
+  }
+}
